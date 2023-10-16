@@ -1,4 +1,4 @@
-# Watchdog
+# Smart Security Surveillance using Advanced Computer Vision
 
 ## Security Surviellance System using AI ( Hacktopia-2k23 )
 
@@ -40,7 +40,7 @@
 
 ## Contributors
 
-- [Pavan Manish](https://github.com/pavanmanishd)
 - [Vishal Sai](https://github.com/Vishal0129)
+- [Pavan Manish](https://github.com/pavanmanishd)
 - [Rohith Bojja](https://github.com/rohithbojja)
 - [Anusha Addepati](https://github.com/anusha9573)
