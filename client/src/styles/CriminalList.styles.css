@@ -1,0 +1,169 @@
+/* Import the Google Font for consistency */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* Styles for the CriminalList component */
+.criminal-list-page {
+    min-height: 100vh;
+    width: 100vw;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Wrapper for the main content and sidebar */
+.home-main {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 150px;
+    min-height: 100vh;
+    background-color: #000;
+    /* Uncomment the following styles if needed */
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+}
+
+/* Sidebar heading styles */
+.sidebar-heading {
+    margin: 1rem 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Container for the CriminalList component */
+.criminal-list-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #222222;
+    color: #fff;
+}
+
+/* Title styles for the CriminalList component */
+.criminal-list-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin: 6rem 5rem 2rem;
+}
+
+/* Container for the list of criminals */
+.home-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+/* Style for the table in the CriminalList component */
+.table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/* Table head styles */
+.table-head {
+    padding: 1rem;
+    text-align: center;
+    cursor: default;
+}
+
+/* First column of table head styles */
+.table-head:first-child {
+    margin-left: 1rem;
+    text-align: left;
+}
+
+/* Table row styles */
+.table-row {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    cursor: pointer;
+}
+
+/* Table data styles */
+.table-data {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+/* Table head styles */
+.table-head {
+    font-weight: 600;
+    color: #fff;
+    background-color: #000;
+}
+
+/* Table row styles */
+.table-row {
+    background-color: #222222;
+}
+
+/* Table data styles */
+.table-data {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* First column of table data styles */
+.table-data:first-child {
+    margin-left: 1rem;
+    text-align: left;
+}
+
+/* Table row hover styles */
+.table-row:hover {
+    background-color: #333333;
+}
+
+/* Styles for responsive design */
+@media screen and (max-width: 600px) {
+    .table {
+        border: 0;
+    }
+
+    .table-head {
+        display: none;
+    }
+
+    .table-row {
+        margin-bottom: 1rem;
+        display: block;
+        border: 1px solid #ddd;
+    }
+
+    .table-data {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ddd;
+    }
+
+    .table-data::before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .table-data:last-child {
+        border-bottom: 0;
+    }
+}
+
+/* Styles for criminal images */
+.criminal-image {
+    height: 80px;
+    width: auto;
+    /* object-fit: cover; */
+}

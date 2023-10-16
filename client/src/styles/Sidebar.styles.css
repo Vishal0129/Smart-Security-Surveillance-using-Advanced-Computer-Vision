@@ -1,0 +1,76 @@
+/* Sidebar.styles.css */
+
+/* Style the sidebar container */
+.sidebar {
+    width: 150px;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 1.5rem 0px;
+    position: relative;
+    
+  }
+
+.sidebar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    height: 100vh;
+    position: absolute;
+    margin-top: 40px;
+}
+  
+  /* Style the sidebar headings (links or buttons) */
+  .sidebar-heading {
+    margin: 10px 0;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none; /* Remove underlines from links if needed */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Add hover effect to sidebar headings */
+  .sidebar-heading:hover {
+    background-color: #333;
+  }
+  
+  /* Optionally, style a selected or active link differently */
+  /* .active-link {
+    background-color: #555;
+  } */
+  /* Add styles for the "Add Criminal" button */
+.sidebar-button {
+    margin: 40px auto;
+    padding: 10px 20px;
+    background-color: #68D391;
+    color: #000;
+    border: none;
+    border-radius: 300px;
+    cursor: pointer;
+    /* transition: background-color 0.3s, color 0.3s; */
+    text-align: center;
+    text-decoration: none; /* Remove underlines from links if needed */
+  }
+  
+  .sidebar-button:hover {
+    background-color: #68D391; /* Darken the button on hover */
+
+  }
+
+  .sidebar-button:active {
+    background-color: #000; /* Add a darker background color when clicked on */
+    color: #fff;
+  }
+
+    .sidebar-button:focus {
+        outline: none;
+    }
+    .sidebar-link {
+        text-decoration: none;
+        color: #fff;
+    }
